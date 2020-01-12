@@ -7,8 +7,6 @@ body
   background: #333;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: consolad;
 }
 
 
@@ -48,6 +46,7 @@ td
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-top: 200px;
 }
 
 
