@@ -10,19 +10,6 @@ body
 }
 
 
-td
-{
-  border: 3px solid black;
-  width: 130px;
-  height: 30px;
-  text-align:  center;
-	vertical-align:  middle;
-	font-family:  "Comic Sans MS", cursive, sans-serif;
-	font-size:  20px;
-	cursor: pointer;
-}
-
-
 .topBarTable
 {
   width: 100%;
@@ -61,6 +48,7 @@ td
   width: 300px;
   height: 200px;
   transition: 0.5s;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
 }
 
 
@@ -76,7 +64,6 @@ td
 }
 .container .card:hover .face.face1
 {
-  background: #ff0057;
   transform: translateY(0);
 }
 
@@ -118,7 +105,6 @@ td
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
   transform: translateY(-100px);
 }
 .container .card:hover .face.face2
@@ -140,7 +126,6 @@ td
 {
   margin: 15px 0 0;
   display: inline-block;
-
   text-decoration: none;
   font-weight: 900;
   color: #333;
