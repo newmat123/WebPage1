@@ -10,6 +10,13 @@ body
 }
 
 
+td
+{
+  border: 5px;
+  text-align: center;
+  font-size: 70px;
+}
+
 .topBarTable
 {
   width: 100%;
@@ -30,6 +37,7 @@ body
 .container
 {
   width: 1000px;
+  max-height: 1000px;
   position: relative;
   display: flex;
   justify-content: space-between;
