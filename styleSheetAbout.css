@@ -3,12 +3,13 @@
 }
 
 body {
+  background-color: #4F4E4E;
   margin: 0;
 }
 
 /* Style the header */
 .header {
-  background-color: #f1f1f1;
+  background-color: #9C9D9C;
   padding: 20px;
   text-align: center;
 }
@@ -27,6 +28,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 /* Change color on hover */
@@ -37,7 +39,7 @@ body {
 
 
 .row {
-  background-color: #808080;
+  background-color: #4F4E4E;
 }
 /* Create three unequal columns that floats next to each other */
 .column {
@@ -71,7 +73,11 @@ body {
 
 /* Style the footer */
 .footer {
-  background-color: #f1f1f1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9C9D9C;
   padding: 10px;
   text-align: center;
 }
