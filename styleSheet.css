@@ -3,7 +3,7 @@ body
 {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 10vh;
   background: #333;
   display: flex;
   justify-content: center;
@@ -29,16 +29,36 @@ body
 
 .container
 {
-  width: 1000px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+
+.header {
+  background-color: #9C9D9C;
+  text-align: center;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.cards
+{
+  width: 100%;
   max-height: 100px;
   position: relative;
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 50px 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   justify-content: space-between;
   margin-top: 100px;
 }
-
 
 .container .card
 {
@@ -51,7 +71,6 @@ body
   width: 300px;
   height: 200px;
   transition: 0.5s;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
 }
 
 
@@ -108,6 +127,7 @@ body
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
   transform: translateY(-100px);
 }
 .container .card:hover .face.face2
@@ -120,7 +140,6 @@ body
 {
   margin: 0;
   padding: 0;
-
 }
 
 
