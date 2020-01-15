@@ -10,9 +10,15 @@ body {
 /* Style the header */
 .header {
   background-color: #9C9D9C;
-  padding: 20px;
   text-align: center;
 }
+.header img
+{
+  display: center;
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Style the top navigation bar */
 .topnav {
