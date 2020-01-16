@@ -66,6 +66,23 @@ body {
 }
 
 
+/* the add botun */
+.addB {
+  border: 1px solid black;
+  border-radius: 10px;
+
+  text-align: center;
+  padding: 20px;
+}
+.addB:hover {
+  background-color: #123;
+  cursor: pointer;
+}
+.addB:active {
+  background-color: #121;
+}
+
+
 /* Middle column */
 .column.middle {
   width: 50%;
@@ -93,7 +110,7 @@ body {
   position: absolute;
   margin-top: 100%;
   width: 100%;
-  padding: 10px;
+  padding: 50px;
   text-align: center;
   background-color: #9C9D9C;
 }
