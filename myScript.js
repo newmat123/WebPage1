@@ -11,7 +11,9 @@ function openOptionPannel() {
 function collectInfo() {
 
   var image = 'pictures\\Python.png';
-  var imageText = document.getElementsById('pNT').value;
+  var imageText = document.getElementById('pNT').value;
+  var discription = document.getElementById('projectDiscribt').value;
+  var link = document.getElementById('linktogithub').value;
 
   var radio = document.getElementsByName('radio1');
 
@@ -21,9 +23,10 @@ function collectInfo() {
     }
   }
 
+  createCard(image, imageText, discription, link);
 
-  createCard(image, imageText, 'text', 'https://github.com/newmat123/Backtraking')
-
+  var pannel = document.getElementById('optionDisplay')
+  pannel.style.display = 'none';
 }
 
 
