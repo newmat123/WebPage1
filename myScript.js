@@ -1,3 +1,8 @@
+function loadAll() {
+
+}
+
+
 
 function openOptionPannel() {
 
@@ -28,6 +33,8 @@ function collectInfo() {
   var pannel = document.getElementById('optionDisplay')
   pannel.style.display = 'none';
 }
+
+
 
 
 function createCard(picture, picText, discript, linkToGit) {
