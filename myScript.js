@@ -1,64 +1,30 @@
 
 function openOptionPannel() {
 
-  var overlay = document.createElement('div');
-  var pannel = document.createElement('div');
-
-  var imageDiv = [];
-  var images = ['pictures\\Python.png', 'pictures\\javascript.png', 'pictures\\cIcon.png'];
-
-  for (var i = 0; i < images.length; i++) {
-    imageDiv[i] = document.createElement('img');
-  }
-
-  var projectName = document.createElement('input');
-  var projectDiscribt = document.createElement('input');
-  var linktogithub = document.createElement('input');
-
-
-  overlay.setAttribute('id', 'optionDisplay');
-  pannel.setAttribute('class', 'optionPannel');
-
-
-  projectName.setAttribute('type', 'text');
-  projectName.setAttribute('name', 'projectNameText');
-  projectName.setAttribute('value', 'Project name');
-
-  projectDiscribt.setAttribute('id', 'projectDiscribt');
-  projectDiscribt.setAttribute('type', 'text');
-  projectDiscribt.setAttribute('name', 'projectdiscribtText');
-  projectDiscribt.setAttribute('value', 'Project discription');
-
-  linktogithub.setAttribute('id', 'linktogithub');
-  linktogithub.setAttribute('type', 'text');
-  linktogithub.setAttribute('name', 'projectLink');
-  linktogithub.setAttribute('value', 'Github link');
-
-
-  for (var i = 0; i < imageDiv.length; i++) {
-    imageDiv[i].setAttribute('class', 'pic');
-    imageDiv[i].setAttribute('src', images[i]);
-    pannel.appendChild(imageDiv[i]);
-  }
-
-  pannel.appendChild(document.createElement('br'));
-  pannel.appendChild(projectName);
-  pannel.appendChild(document.createElement('br'));
-  pannel.appendChild(projectDiscribt);
-  pannel.appendChild(document.createElement('br'));
-  pannel.appendChild(linktogithub);
-
-
-  overlay.appendChild(pannel);
-
-  document.body.appendChild(overlay);
-
-
-  createCard(images[0], 'yes', 'text', 'https://github.com/newmat123/Backtraking')
+  var pannel = document.getElementById('optionDisplay')
+  pannel.style.display = 'block';
 
 }
 
 
+
+function collectInfo() {
+
+  var image = 'pictures\\Python.png';
+  var imageText = document.getElementsById('pNT').value;
+
+  var radio = document.getElementsByName('radio1');
+
+  for (var i = 0; i < radio.length; i++) {
+    if(radio[i].checked){
+      image = radio[i].value;
+    }
+  }
+
+
+  createCard(image, imageText, 'text', 'https://github.com/newmat123/Backtraking')
+
+}
 
 
 function createCard(picture, picText, discript, linkToGit) {
