@@ -261,3 +261,10 @@ body {
   max-height: 70px;
   border: 2px solid blue;
 }
+
+
+
+#projectDiscribt {
+  width: 70%;
+  height: 100px;
+}
